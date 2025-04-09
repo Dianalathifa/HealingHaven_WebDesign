@@ -1,0 +1,130 @@
+/* Profile.css */
+
+.profile-container {
+  margin-top: 20px;
+}
+
+.profile-card {
+  background-color: #f8f9fa;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #343a40; /* Border around the profile image */
+  padding: 5px;
+}
+
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  font-size: 1.75rem; /* Larger than default h5 */
+  font-weight: bold; /* Bold text */
+  color: #343a40;
+}
+
+.profile-email, .profile-age, .profile-phone {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.profile-interventions {
+  margin-top: 30px;
+}
+
+.profile-subtitle {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #495057;
+}
+
+/* Profile.css */
+
+.center-text {
+  text-align: center;
+}
+
+.intervention-category {
+  margin-bottom: 30px;
+}
+
+.intervention-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.intervention-card {
+  flex: 1 1 calc(50% - 20px); /* Adjust width as needed */
+  max-width: 300px;
+}
+
+.intervention-card .card {
+  height: 100%;
+}
+
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #495057;
+}
+
+.card ul {
+  padding-left: 5px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.intervention-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+.center-text {
+  text-align: center;
+}
+
+.test-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.test-card {
+  flex: 1 1 calc(50% - 20px); /* Half width for two cards */
+  max-width: 300px;
+}
+
+.test-card.single {
+  flex: 1 1 100%; /* Full width if only one card */
+  max-width: none;
+}
+
+.test-card.two {
+  flex: 1 1 calc(50% - 20px); /* Half width if two cards */
+}
+
+.test-card.three {
+  flex: 1 1 calc(33.333% - 20px); /* Third width if three cards */
+}
+
+.btn-light{
+  background-color: #25B7D3;
+  color: white;
+}

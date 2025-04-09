@@ -1,0 +1,110 @@
+/* CSS untuk Test Page */
+body {
+    background-color: #f7f9fc;
+  }
+  .test-page-subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  /* Header Title */
+  .test-page-section-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #0c426c;
+  }
+  
+  .test-page-tfonts {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .test-page-tfonts-2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #0c426c;
+    font-weight: bold;
+  }
+  
+  /* MentalWell Cards */
+  .test-page-mentalwell-card {
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .test-page-small-img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Custom Button */
+  .test-page-custom-button {
+    background-color: #fa9db3;
+    border: 2px solid #f695ab;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .test-page-custom-button:hover {
+    background-color: #e5c6c3;
+    color: #0c426c;
+  }
+  
+  /* DASS Cards */
+  .test-page-dass-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px 5px;
+
+  }
+  
+  .test-page-small-card {
+    height: 290px;
+  }
+  
+  .test-page-medium-card {
+    height: 290px;
+  }
+  
+  .test-page-large-card {
+    height: 350px;
+    margin-left: 80px;
+    padding-bottom: 0px;
+  }
+  
+  .test-page-small-card-suicide {
+    height: 260px;
+  }
+  
+  /* Text styles */
+  .test-page-h5 {
+    font-size: 18px;
+    color: #0c426c;
+    font-weight: bold;
+  }
+  
+  .test-page-p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  /* Footer Styles */
+  .test-page-footer {
+    background-color: #0c426c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .test-page-footer a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  
+  .test-page-footer a:hover {
+    color: #fff;
+  }
+  

@@ -1,0 +1,34 @@
+/* IntervensiUser.css */
+
+#intervensi-list {
+    color: #0c426c;
+    background-color: white;
+    padding-top: 40px;
+  }
+  
+  .card-title-circle {
+    font-size: 1.5rem; /* Gaya untuk judul kartu */
+    font-weight: bold;
+  }
+  
+  .card-text-circle {
+    font-size: 1rem; /* Gaya untuk teks kartu */
+  }
+  
+  .card-hover-circle {
+    transition: transform 0.3s;
+  }
+  
+  .card-hover-circle:hover {
+    transform: scale(1.05);
+  }
+  
+  .title-container-circle {
+    margin-bottom: 15px; /* Spasi bawah untuk judul */
+  }
+  
+  .card-image-circle {
+    width: 100%; /* Memastikan gambar mengambil lebar penuh kartu */
+    border-radius: 0.5rem; /* Sudut membulat pada gambar */
+  }
+  

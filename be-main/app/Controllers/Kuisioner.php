@@ -146,7 +146,7 @@ class Kuisioner extends ResourceController
 
         return $this->respond($response);
     } catch (\Exception $e) {
-        // Jika terjadi kesalahan, rollback transaksi dan kirim pesan kesalahan
+        // Jika There is an error, rollback transaksi dan kirim pesan kesalahan
         $db->transRollback();
         return $this->fail($e->getMessage());
     }

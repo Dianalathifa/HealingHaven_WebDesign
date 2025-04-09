@@ -1,0 +1,1094 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/*  */
+.head h3 {
+  font-weight: 50;
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+.head h1 {
+  font-size: 36px;
+  color: #005F75;
+  font-family: 'Alfa Slab One';
+}
+
+.head h1 span {
+  color: #ff014f;
+}
+.head h2 {
+  font-size: 19px;
+  font-weight: bold;
+  color: #ff014f;
+}
+.head h2 span {
+  color: black;
+}
+.head p {
+  color: #005F75;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.scrollable-cards-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Membuat efek geser pada tampilan mobile */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent; /* Menyembunyikan scrollbar di browser yang mendukung scrollbar-width */
+}
+
+.scrollable-cards-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-cards-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.card-image-container {
+  overflow: hidden;
+  height: 150px; /* Sesuaikan dengan tinggi yang diinginkan */
+}
+
+.card-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Ganti warna latar belakang modal jika perlu */
+.reminders-modal {
+  z-index: 1050; /* Pastikan modal muncul di atas navbar */
+  position: fixed; /* Tetap di tempat */
+  top: 10%; /* Posisikan di tengah vertikal */
+  left: 50%; /* Posisikan di tengah horizontal */
+  transform: translateX(-50%);
+  width: 80%; /* Atur lebar modal */
+  max-width: 600px; /* Lebar maksimum */
+  background-color: #fff; /* Warna latar belakang */
+  border-radius: 10px; /* Rounding border */
+  padding: 20px; /* Padding */
+  overflow-y: auto; /* Scroll jika konten melebihi ukuran modal */
+}
+
+/* Di dalam Home.css atau file CSS yang relevan */
+.modal {
+  z-index: 2000; /* Pastikan ini lebih tinggi dari elemen lain di halaman */
+}
+
+.tosca-table {
+  border: 1px solid #20B2AA;
+  border-radius: 5px;
+  overflow: hidden; /* To ensure the rounded corners are applied */
+}
+
+.tosca-table thead th {
+  background-color: #25B7D3;
+  color: white;
+  font-weight: bold;
+}
+
+.tosca-table tbody tr:nth-child(odd) {
+  background-color: #E0FFFF;
+}
+
+.tosca-table tbody tr:nth-child(even) {
+  background-color: #AFEEEE;
+}
+
+.tosca-table tbody td {
+  border: 1px solid #25B7D3;
+}
+
+.tosca-table tbody tr:first-child td {
+  border-bottom: 2px solid black; /* Black bottom border for the first row */
+}
+
+.tosca-table tbody td:first-child {
+  background-color: #25B7D3;
+  color: white;
+  font-weight: bold;
+}
+.background{
+  background-color: #E3F7FE;
+}
+
+.margin-top{
+  margin-top: -50px;
+}
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.section-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #0c426c;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.before-content {
+  padding-top: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Text and title styling */
+.subtitle-home {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* Button styling */
+.btn-info {
+  background-color: #25B7D3;
+  border-color: #FFD2DD;
+  font-weight: bold;
+  color: whitesmoke;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btn-info:hover {
+  background-color: #25B7D3;
+  border-color: #ffd2dd;
+}
+
+/* Card styling */
+.card {
+  margin: 10px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-image-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Section-specific styles */
+#psikolog-list {
+  background-color: white;
+  color: #141313;
+}
+
+#about {
+  background-color: #f9f9f9;
+}
+
+
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Emergency section styling */
+
+
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 70%;
+  }
+}
+
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Ensure all cards are of the same size */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.card .btn {
+  margin-top: auto;
+}
+
+.scrollable-cards-container {
+  display: flex;
+  overflow-x: scroll;
+  padding: 20px 0;
+}
+
+.scrollable-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Emergency section styling */
+.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.section-title.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* Custom image sizes */
+.custom-image-size {
+  width: 300px;
+  height: 300px;
+}
+
+/* Custom container styling */
+.custom-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 70%;
+  }
+}
+
+.custom-card-body {
+  height: 100%;
+  text-align: center;
+  
+}
+
+.custom-card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24px;
+  margin: 1rem 0;
+}
+
+.custom-card-image {
+  object-fit: cover;
+  height: 360px;
+}
+
+.custom-btn {
+  margin-top: auto;
+  background-color: #25B7D3;
+  color: #ffffff;
+  border: 2px solid #25B7D3;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-btn:hover {
+  background-color: #C4EAF4;
+}
+
+.small-img {
+  width: 85px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Importing Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #f0f4ff;
+  padding: 60px 0;
+}
+
+.hero-section .display-4 {
+  color: #5a189a;
+  font-weight: 700;
+}
+
+.hero-section .lead {
+  font-size: 1.25rem;
+  color: #141313;
+  margin-bottom: 30px;
+}
+
+.hero-section .hero-btn {
+  background-color: #b7975a;
+  border-color: #ffd2dd;
+  color: white;
+  border-radius: 50px;
+  padding: 16px 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.testimonial-card {
+  border: none;
+  background-color: #f0f4ff;
+  text-align: center;
+}
+
+.testimonial-card .card-body {
+  padding: 20px;
+}
+
+.testimonial-card .card-text {
+  font-size: 1.25rem;
+  color: #141313;
+  font-weight: 500;
+}
+
+.testimonial-card .card-subtitle {
+  font-size: 1rem;
+  color: #5a189a;
+}
+
+/* Features Section */
+.features-section {
+  padding: 60px 0;
+}
+
+.features-section .small-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.features-section h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5a189a;
+}
+
+.features-section p {
+  font-size: 1rem;
+  color: #141313;
+}
+
+/* Doctor Consulting Section */
+.doctor-consulting-section {
+  padding: 60px 0;
+  background-color: #f0f4ff;
+}
+
+.doctor-consulting-section h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5a189a;
+}
+
+.doctor-consulting-section p {
+  font-size: 1.25rem;
+  color: #141313;
+}
+
+.doctor-consulting-section .icon-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.doctor-consulting-section .icon-feature h5 {
+  margin: 0;
+  margin-left: 10px;
+  color: #141313;
+}
+
+/* Detailed Services Section */
+.service-section {
+  margin-bottom: 40px;
+}
+
+.service-section h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #5a189a;
+}
+
+.service-section p {
+  font-size: 1.125rem;
+  color: #141313;
+}
+
+/* Psikolog Recommendations Section */
+.scrollable-cards-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.scrollable-cards-container .card {
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+.tes-skrining-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+.tes-skrining-section.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  color: #0c426c;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.section-header .highlight {
+  color: #edce7a;
+}
+
+.section-header .read-all {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0c426c;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.section-header .read-all:hover {
+  border-bottom: 2px solid #edce7a;
+}
+
+.tes-skrining-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  text-align: left;
+  max-width: 450px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-title {
+  font-size: 18px;
+  color: #0c426c;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 45%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  position: absolute; /* Mengubah gambar menjadi absolut */
+  bottom: -45px; /* Posisi 10px dari bawah */
+  right: 10px; /* Posisi 10px dari kanan */
+}
+
+.card-content .read-more {
+  font-size: 20px; /* Lebih besar dan jelas untuk angka */
+  font-weight: 900; /* Membuat font sangat tebal */
+  font-family: 'Poppins', sans-serif; /* Font untuk tombol */
+  background: linear-gradient(135deg, #ffffff, #dfd6d6); /* Gradasi warna untuk tampilan modern */
+  color: rgb(63, 63, 63);
+  border-radius: 50%; /* Membuat tombol bulat */
+  padding: 15px; /* Ukuran padding */
+  width: 60px; /* Lebar tombol */
+  height: 60px; /* Tinggi tombol */
+  text-align: center;
+  display: inline-flex; /* Flexbox untuk memusatkan teks */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow untuk tampilan smooth */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk hover */
+  position: relative; /* Posisi relatif */
+  cursor: pointer; /* Menunjukkan tombol bisa diklik */
+}
+
+.card-content .read-more:hover {
+  background: linear-gradient(135deg, rgb(251, 188, 16), #ff8400); /* Gradasi lebih gelap saat hover */
+  transform: scale(1.1); /* Perbesar sedikit tombol */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Efek shadow lebih intens saat hover */
+}
+
+.card-content .read-more:active {
+  transform: scale(0.95); /* Efek kecil saat tombol ditekan */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Kurangi shadow saat ditekan */
+}
+
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.help-section {
+  position: relative; /* Menjadikan posisi relatif agar dapat menempatkan elemen di dalamnya */
+  padding: 50px; /* Ruang vertikal untuk section */
+  background-color: #9ac1f0; /* Warna latar belakang */
+  display: flex;
+  justify-content: center; /* Memusatkan konten secara horizontal */
+  overflow: hidden; /* Menyembunyikan bagian yang melampaui batas */
+}
+
+.custom-shape-divider-top-1728447839 {
+  position: absolute; /* Memposisikan SVG secara absolut di atas section */
+  top: 0; /* Menempel di bagian atas */
+  left: 0; /* Menempel di bagian kiri */
+  width: 100%; /* Memastikan lebar penuh */
+  overflow: hidden; /* Menyembunyikan bagian yang keluar dari batas */
+  line-height: 0; /* Menghapus tinggi garis */
+  z-index: 0; /* Menempatkan SVG di belakang konten */
+}
+
+.custom-shape-divider-top-1728447839 svg {
+  position: relative; /* Menjaga posisi relatif untuk SVG */
+  display: block;
+  width: calc(180% + 1.3px); /* Lebar yang diperluas */
+  height: 172px; /* Tinggi SVG */
+  transform: rotateY(180deg); /* Membalikkan SVG jika diperlukan */
+}
+
+.help-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dua kolom untuk tampilan desktop */
+  gap: 40px; /* Jarak antar kolom */
+  align-items: center; /* Meratakan item secara vertikal */
+  max-width: 1200px; /* Lebar maksimum konten */
+  width: 100%; /* Lebar penuh */
+  position: relative; /* Agar konten tetap di atas SVG */
+  z-index: 1; /* Memastikan konten berada di atas latar belakang */
+}
+
+.image-container {
+  position: relative; /* Memungkinkan penggunaan posisi absolut untuk badge */
+  animation: bounce 3s ease-in-out infinite; /* Animasi gambar */
+}
+
+.help-image {
+  max-width: 100%; /* Gambar responsif */
+  border-radius: 10px; /* Sudut bulat untuk gambar */
+}
+
+.badge {
+  position: absolute; /* Memungkinkan badge berada di atas gambar */
+  top: 10px;
+  left: 10px;
+  background-color: #00b4d8; /* Warna badge */
+  color: white; /* Warna teks badge */
+  padding: 5px 10px; /* Padding badge */
+  border-radius: 5px; /* Sudut bulat untuk badge */
+  font-size: 14px; /* Ukuran font badge */
+  animation: bounce 2s ease-in-out; /* Animasi badge */
+}
+
+.text-container {
+  text-align: left; /* Mengatur teks ke kiri */
+}
+
+.text-container h2 {
+  font-size: 42px; /* Ukuran font judul */
+  color: #0c426c; /* Warna teks judul */
+  margin-bottom: 20px; /* Jarak bawah untuk judul */
+  font-weight: bold; /* Ketebalan font judul */
+}
+
+.highlight {
+  color: #fbf6f6; /* Warna untuk teks yang disorot */
+}
+
+.icon {
+  font-size: 32px; /* Ukuran ikon */
+  vertical-align: middle; /* Menyelaraskan ikon dengan teks */
+}
+
+.text-container p {
+  font-size: 18px; /* Ukuran font paragraf */
+  color: #555; /* Warna teks paragraf */
+  margin-bottom: 20px; /* Jarak bawah untuk paragraf */
+}
+
+.get-help-button {
+  font-size: 18px; /* Ukuran font tombol */
+  background-color: #edce7a; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border-radius: 50px; /* Sudut bulat untuk tombol */
+  padding: 10px 30px; /* Padding tombol */
+  text-decoration: none; /* Menghapus garis bawah */
+  display: inline-block; /* Mengatur tombol sebagai blok inline */
+  transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.get-help-button:hover {
+  background-color: #d3f4fb; /* Mengubah warna latar saat hover */
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+  .help-content {
+    grid-template-columns: 1fr; /* Satu kolom untuk tampilan mobile */
+    gap: 20px; /* Mengurangi jarak antar elemen */
+    padding: 0 20px; /* Padding samping untuk tampilan mobile */
+  }
+
+  .text-container h2 {
+    font-size: 30px; /* Ukuran font judul yang lebih kecil */
+  }
+
+  .text-container p {
+    font-size: 16px; /* Ukuran font paragraf yang lebih kecil */
+  }
+
+  .get-help-button {
+    padding: 10px 20px; /* Mengurangi padding tombol untuk tampilan mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-container h2 {
+    font-size: 24px; /* Ukuran judul lebih kecil untuk perangkat sangat kecil */
+  }
+
+  .text-container p {
+    font-size: 14px; /* Ukuran paragraf lebih kecil untuk perangkat sangat kecil */
+  }
+
+  .badge {
+    font-size: 12px; /* Ukuran badge lebih kecil untuk perangkat sangat kecil */
+  }
+
+  .icon {
+    font-size: 28px; /* Ukuran icon lebih kecil untuk perangkat sangat kecil */
+  }
+}
+
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+  #psikolog-list h2 {
+    font-size: 32px; /* Mengurangi ukuran font judul untuk tampilan mobile */
+  }
+
+  #psikolog-list h1 {
+    font-size: 16px; /* Mengurangi ukuran font subjudul untuk tampilan mobile */
+  }
+
+  .col-md-6 {
+    margin-bottom: 20px; /* Menambahkan jarak bawah pada kolom untuk tampilan mobile */
+  }
+
+  .get-help-button {
+    padding: 10px 20px; /* Mengurangi padding tombol untuk tampilan mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  #psikolog-list h2 {
+    font-size: 24px; /* Ukuran judul lebih kecil untuk perangkat sangat kecil */
+  }
+
+  #psikolog-list h1 {
+    font-size: 14px; /* Ukuran subjudul lebih kecil untuk perangkat sangat kecil */
+  }
+
+  .badge {
+    font-size: 12px; /* Ukuran badge lebih kecil untuk perangkat sangat kecil */
+  }
+}
+
+#psikolog-list {
+  background: rgb(255, 250, 250);
+  color: #141313;
+  text-align: center;
+  padding: 45px 0;
+  overflow: hidden;
+}
+
+#psikolog-list h2 {
+  font-size: 43px;
+  font-weight: 700;
+  color: #0c426c;
+  line-height: 1.3;
+  margin: 0 0 20px 0;
+  padding: 0 10px;
+  letter-spacing: 1.5px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  animation: none;
+}
+
+#psikolog-list h1 {
+  color: #0c426c;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 15px 0;
+  padding: 0 10px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+#psikolog-list .btn-custom {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 15px;
+  border-radius: 50px;
+  padding: 15px 30px;
+  background-color: #e79cae;
+  border-color: #e79cae;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1.5s ease-in-out, bounceButton 3s alternate;
+}
+
+#psikolog-list .btn-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#psikolog-list .col-md-6.text-md-left {
+  animation: fadeInLeft 1s ease-in-out, bounceLeft 3s  alternate;
+}
+
+#psikolog-list .col-md-6.text-center img {
+  width: 100%;
+  max-width: 590px;
+  height: auto;
+  filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.1));
+  animation: fadeInRight 1.2s ease-in-out, bounceRight 3s infinite alternate;
+}
+
+@keyframes bounceLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes bounceRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes bounceButton {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* PsikologSection.css */
+
+.rekomendasi-psikolog {
+  padding-top: 50px;
+  position: relative; /* Agar konten tetap di atas SVG */
+  background-color: #9ac1f0; /* Warna latar belakang */
+  justify-content: center; /* Memusatkan konten secara horizontal */
+  overflow: hidden; /* Menyembunyikan bagian yang melampaui batas */
+}
+
+.custom-shape-divider-bottom-1728448950 {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1728448950 svg {
+  position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1728448950 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.rekomendasi-psikolog .section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #2F3E88; /* Warna judul section */
+}
+
+.rekomendasi-psikolog .psikolog-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.rekomendasi-psikolog .psikolog-card:hover {
+  transform: translateY(-5px); /* Efek hover card */
+}
+
+.rekomendasi-psikolog .psikolog-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0; /* Rounded top corners */
+}
+
+.rekomendasi-psikolog .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f1c03a; /* Warna judul psikolog */
+  margin: 10px 0;
+  white-space: nowrap; /* Mencegah teks membungkus */
+  overflow: hidden; /* Menyembunyikan teks yang melebihi lebar */
+  text-overflow: ellipsis; /* Menambahkan '...' di akhir teks yang terpotong */
+}
+
+.rekomendasi-psikolog .card-text {
+  font-size: 12px;
+  color: #555; /* Warna deskripsi */
+  margin: 10px 0;
+}
+
+.rekomendasi-psikolog .card-body {
+  padding: 20px;
+  text-align: center; /* Center align text in card */
+}
+
+.rekomendasi-psikolog .btn-light {
+  background-color: #edce7a;
+  border: none;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 50px; /* Tombol rounded */
+  transition: background-color 0.3s, transform 0.3s; /* Menambahkan efek transisi */
+}
+
+.rekomendasi-psikolog .btn-light:hover {
+  background-color: #9ac5e5; /* Warna saat hover */
+}
+
+.rekomendasi-psikolog .link-button {
+  font-size: 14px;
+  margin-top: 20px;
+  border-radius: 50px;
+  padding: 16px 30px;
+  background-color: white;
+  border: 2px solid #2F3E88; /* Border untuk tombol */
+  font-weight: bold;
+  color: #2F3E88;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.rekomendasi-psikolog .link-button:hover {
+  background-color: #e7e7e7; /* Warna saat hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .rekomendasi-psikolog .section-title {
+    font-size: 28px; /* Ukuran judul lebih kecil di layar kecil */
+  }
+
+  .rekomendasi-psikolog .card-title {
+    font-size: 14px; /* Ukuran judul psikolog lebih kecil */
+  }
+
+  .rekomendasi-psikolog .card-text {
+    font-size: 10px; /* Ukuran deskripsi lebih kecil */
+  }
+}
+
+@media (max-width: 576px) {
+  .rekomendasi-psikolog .psikolog-card img {
+    height: 200px; /* Menyesuaikan tinggi gambar di layar kecil */
+  }
+}
+
+/* Penyesuaian untuk iPad Mini */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .rekomendasi-psikolog .psikolog-card {
+    margin: 0 10px; /* Memberikan sedikit jarak di sisi */
+  }
+
+  .rekomendasi-psikolog .psikolog-card img {
+    height: 220px; /* Menyesuaikan tinggi gambar untuk iPad Mini */
+  }
+
+  .rekomendasi-psikolog .section-title {
+    font-size: 32px; /* Ukuran judul sedikit lebih kecil */
+  }
+
+  .rekomendasi-psikolog .card-title {
+    font-size: 15px; /* Ukuran judul psikolog lebih kecil */
+  }
+}
+

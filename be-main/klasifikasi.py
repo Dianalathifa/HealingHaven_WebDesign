@@ -297,4 +297,3 @@ def dapatkan_hasil_prediksi_partisipan(id_partisipan):
 
 if __name__ == '__main__':
     app.run(debug=True)
-b 

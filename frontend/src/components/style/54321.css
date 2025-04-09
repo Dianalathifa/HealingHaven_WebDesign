@@ -1,0 +1,75 @@
+/* App.css or any other css file you use */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card .text-center {
+  padding: 10px;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.btn-custom {
+width: 100%;
+border: 1px solid #FFF;
+font-weight: bold;
+border-radius: 5px;
+color: #FFF;
+background-color: #6A5ACD;
+}
+
+.btn-custom:disabled {
+background-color: #BDB76B;
+border-color: #BDB76B;
+color: #FFF;
+}
+
+.btn-purple {
+background-color: #6A5ACD !important;
+border-color: white !important;
+}
+
+.btn-pink {
+background-color: #F5A5AD !important;
+border-color: white !important;
+}
+/* Tambahkan ini ke file CSS Anda, misalnya, 54321.css */
+
+/* CSS untuk modal */
+.modal-custom .modal-dialog {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1050; /* Pastikan z-index lebih tinggi dari navbar */
+background-color: white;
+padding: 20px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+border-radius: 15px; /* Tambahan opsional untuk styling */
+}
+
+/* CSS untuk backdrop */
+.modal-backdrop.show {
+z-index: 1040; /* Pastikan backdrop memiliki z-index lebih rendah dari modal */
+}
+
+/* CSS untuk Navbar */
+.navbar-custom {
+z-index: 1000;
+}
+
+
+.toast-custom {
+z-index: 9999; /* Set toast z-index to ensure it's on top */
+}
+

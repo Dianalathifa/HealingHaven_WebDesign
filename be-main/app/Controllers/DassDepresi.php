@@ -12,6 +12,7 @@ class DassDepresi extends BaseController
 
     public function saveAnswer()
     {
+        // Inisialisasi model JawabanDASSDepresi
         $jawabanModel = new JawabanDASSDepresi();
 
         // Ambil data jawaban dari body request
@@ -22,7 +23,7 @@ class DassDepresi extends BaseController
             return $this->fail('Atribut "jawaban" tidak ditemukan dalam data permintaan.', 400);
         }
 
-        // Hitung skor DASS-Stress
+        // Hitung skor total DASS-Depresi
         $totalScore = array_sum($requestData['jawaban']);
 
         // Klasifikasi hasil
@@ -58,13 +59,10 @@ class DassDepresi extends BaseController
             'question_14' => $requestData['jawaban'][13],
             'total_score' => $totalScore,
             'classification' => $classification,
-            // Masukkan total skor dan klasifikasi ke dalam database
             'points' => $totalScore,
             'klasifikasi' => $classification,
             'tanggal_tes' => (new DateTime())->format('Y-m-d'),
         ];
-
-        
 
         // Simpan jawaban ke dalam database
         $saved = $jawabanModel->save($jawabanData);
@@ -76,9 +74,9 @@ class DassDepresi extends BaseController
         }
     }
 
-    // Function untuk mengambil jawaban
     public function getAnswers()
     {
+        // Inisialisasi model JawabanDASSDepresi
         $jawabanModel = new JawabanDASSDepresi();
 
         // Ambil semua data jawaban dari database
@@ -91,27 +89,25 @@ class DassDepresi extends BaseController
         }
     }
 
-    // Function untuk mengambil jawaban berdasarkan id_partisipan
-public function getAnswerByIdPartisipan($id_partisipan)
-{
-    $jawabanModel = new JawabanDASSDepresi();
+    public function getAnswerByIdPartisipan($id_partisipan)
+    {
+        // Inisialisasi model JawabanDASSDepresi
+        $jawabanModel = new JawabanDASSDepresi();
 
-    // Ambil data jawaban dari database berdasarkan id_partisipan
-    $answer = $jawabanModel->where('id_partisipan', $id_partisipan)->first();
+        // Ambil data jawaban dari database berdasarkan id_partisipan
+        $answer = $jawabanModel->where('id_partisipan', $id_partisipan)->first();
 
-    if ($answer) {
-        // Format data jawaban sesuai yang diinginkan
-        $formattedAnswer = [
-            'id_partisipan' => $answer['id_partisipan'],
-            'points' => $answer['points'],
-            'klasifikasi' => $answer['klasifikasi'],
-            'tanggal_tes' => $answer['tanggal_tes']
-        ];
-        return $this->respond($formattedAnswer);
-    } else {
-        return $this->fail('Data jawaban tidak ditemukan', 404);
+        if ($answer) {
+            // Format data jawaban sesuai yang diinginkan
+            $formattedAnswer = [
+                'id_partisipan' => $answer['id_partisipan'],
+                'points' => $answer['points'],
+                'klasifikasi' => $answer['klasifikasi'],
+                'tanggal_tes' => $answer['tanggal_tes']
+            ];
+            return $this->respond($formattedAnswer);
+        } else {
+            return $this->fail('Data jawaban tidak ditemukan', 404);
+        }
     }
 }
-
-}
-

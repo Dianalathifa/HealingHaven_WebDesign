@@ -1,0 +1,108 @@
+/* Kontainer Utama */
+.container-daily {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f7fa;
+  min-height: 100vh; /* Mengatur tinggi minimum agar konten selalu mengisi layar */
+}
+
+/* Judul Konten */
+.daily-insight-title {
+  font-weight: bold;
+  font-size: 2.5rem; /* Menggunakan rem untuk ukuran font yang lebih fleksibel */
+  color: #2c3e50; /* Warna gelap yang modern */
+  margin-bottom: 20px;
+  text-align: center; 
+  line-height: 1.3; /* Membuat judul lebih proporsional */
+  max-width: 900px;
+  transition: color 0.3s ease; /* Smooth transition untuk hover */
+}
+
+/* Hover pada judul */
+.daily-insight-title:hover {
+  color: #e74c3c; /* Perubahan warna saat hover */
+}
+
+/* Gambar Utama */
+.daily-insight-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px; /* Sudut membulat untuk gambar */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  height: 400px;
+  width: 600px;
+}
+
+/* Efek hover pada gambar */
+.daily-insight-image:hover {
+  transform: scale(1.05); /* Sedikit memperbesar gambar saat hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+/* Deskripsi */
+.daily-insight-description {
+  max-width: 900px;
+  font-size: 1.125rem; /* Ukuran font yang sedikit lebih besar */
+  line-height: 1.75;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Menggunakan font sans-serif untuk kesan modern */
+  color: #34495e; /* Warna teks yang lebih lembut */
+  padding: 30px; /* Padding yang nyaman untuk ruang baca */
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  transition: all 0.3s ease; /* Transisi smooth */
+}
+
+/* Deskripsi hover effect */
+.daily-insight-description:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Bayangan lebih intens saat hover */
+}
+
+/* Efek smooth untuk seluruh elemen */
+.daily-insight-description,
+.daily-insight-title,
+.daily-insight-image {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 991px) {
+  .daily-insight-title {
+    font-size: 2rem; /* Ukuran font lebih kecil */
+  }
+
+  .daily-insight-image {
+    height: 300px;
+    width: 450px; /* Sesuaikan ukuran gambar untuk tablet */
+  }
+
+  .daily-insight-description {
+    font-size: 1rem; /* Ukuran teks lebih kecil untuk kenyamanan di tablet */
+    padding: 20px;
+  }
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 767px) {
+  .daily-insight-title {
+    font-size: 1.75rem; /* Ukuran font lebih kecil */
+  }
+
+  .daily-insight-image {
+    height: 250px;
+    width: 350px; /* Sesuaikan ukuran gambar untuk perangkat mobile */
+  }
+
+  .daily-insight-description {
+    font-size: 0.95rem;
+    padding: 15px;
+  }
+}

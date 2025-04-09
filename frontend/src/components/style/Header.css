@@ -1,0 +1,238 @@
+/* CSS Umum */
+.custom-navbar {
+  background: #ffffff !important; /* Gradient background */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounding border */
+  position: fixed; /* Tetap di atas */
+  top: 0; /* Posisi di atas */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Pastikan navbar di atas konten lainnya */
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Transisi untuk background dan opacity */
+}
+
+/* Menambahkan efek transparan */
+.custom-navbar.transparent {
+  background-color: rgba(255, 255, 255, 0.9); /* Transparansi lebih sedikit agar lebih jelas */
+}
+
+/* Logo Navbar */
+.custom-navbar .navbar-brand img {
+  margin: 5px 0;
+  max-width: 120px; /* Perbesar batas lebar untuk logo */
+  margin-left: 20px;
+}
+
+/* Style NavLink */
+.custom-navbar .navbar-nav .nav-link {
+  color: #dc869a !important; /* Warna teks */
+  font-weight: bold;
+  font-size: 18px; /* Ukuran font lebih besar */
+  padding: 12px 15px; /* Padding lebih besar untuk klik yang lebih nyaman */
+  transition: all 0.3s ease; 
+}
+
+.custom-navbar.transparent-on-scroll {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparansi lebih halus */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Shadow lebih lembut */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transisi lebih halus */
+}
+
+/* Mengaktifkan efek transparansi hanya saat scroll */
+body.scrolled .custom-navbar.transparent-on-scroll {
+  background-color: rgba(255, 255, 255, 0.9); /* Transparansi sedikit lebih jelas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Perbesar shadow */
+}
+
+/* Hover Effect */
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #b04863; /* Warna teks saat hover lebih gelap untuk kontras */
+  background-color: rgba(220, 134, 154, 0.2); /* Efek background saat hover lebih jelas */
+  border-radius: 50px; /* Rounding saat hover */
+  padding: 12px 20px; /* Perbesar padding saat hover */
+  transition: all 0.2s ease; /* Penambahan transisi */
+}
+
+.custom-navbar .dropdown-menu {
+  background-color: #fbfdff; /* Ubah warna background dropdown */
+  border: none; /* Menghilangkan border dropdown */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan shadow */
+  border-radius: 15px;
+}
+
+.custom-navbar .dropdown-item {
+  color: #dc869a; /* Ubah warna teks item */
+  font-size: 16px;
+  padding: 10px 20px; /* Menambahkan padding */
+  border-radius: 15px;
+
+}
+
+.custom-navbar .dropdown-item:hover {
+  background-color: #dc869a; /* Warna background ketika hover */
+  color: white; /* Warna teks ketika hover */
+}
+
+
+/* Active Link */
+.custom-navbar .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #b04863 !important; /* Warna teks aktif lebih gelap */
+}
+
+/* Toggler Button */
+.custom-navbar .navbar-toggler {
+  border-color: #dc869a; /* Warna border toggler */
+  color: #dc869a !important;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-color: white; /* Warna ikon toggler */
+}
+
+/* Style untuk modal pengingat */
+.reminders-modal {
+  z-index: 1050;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* SweetAlert Customization */
+.custom-swal-popup {
+  background: white;
+  color: #4A4A4A;
+  border-radius: 10px;
+}
+
+.custom-swal-title {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #4A4A4A;
+}
+
+.custom-swal-confirm-button,
+.custom-swal-cancel-button {
+  border: none !important;
+  color: #ffffff !important;
+  border-radius: 12px !important;
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.custom-swal-confirm-button:hover,
+.custom-swal-cancel-button:hover {
+  background-color: white !important;
+}
+
+.custom-swal-cancel-button {
+  background-color: silver !important;
+}
+
+.custom-swal-cancel-button:hover {
+  background-color: white !important;
+}
+
+/* Media Queries untuk layar kecil */
+@media (max-width: 768px) {
+  .custom-navbar .navbar-nav .nav-link {
+    font-size: 16px; /* Ukuran font lebih besar di layar kecil */
+    padding: 8px; /* Padding lebih besar untuk aksesibilitas */
+  }
+
+  .custom-navbar .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .custom-navbar .navbar-brand img {
+    max-width: 100px; /* Ukuran logo tetap */
+  }
+
+  .reminders-modal {
+    width: 90%; /* Modal lebih kecil di layar kecil */
+    top: 15%; /* Posisikan sedikit lebih ke bawah di layar kecil */
+  }
+
+  /* SweetAlert Responsif */
+  .custom-swal-popup {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .custom-swal-confirm-button,
+  .custom-swal-cancel-button {
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* Media Queries untuk layar sangat kecil */
+@media (max-width: 576px) {
+  .custom-navbar .navbar-nav .nav-link {
+    font-size: 14px; /* Ukuran font lebih besar di layar sangat kecil */
+    padding: 5px 8px; /* Padding tetap */
+  }
+
+  .custom-navbar .navbar-brand img {
+    max-width: 80px; /* Ukuran logo lebih kecil */
+  }
+
+  .reminders-modal {
+    width: 95%; /* Modal lebih kecil di layar sangat kecil */
+    top: 20%; /* Tambah margin atas */
+  }
+
+  /* SweetAlert Responsif */
+  .custom-swal-popup {
+    width: 95%;
+  }
+
+  .custom-swal-confirm-button,
+  .custom-swal-cancel-button {
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+  }
+}
+
+.custom-swal-popup {
+  background-color: white !important; /* Biru */
+  color: #83bde9; /* Warna teks */
+  border-radius: 10px; /* Optional: Membuat sudut lebih halus */
+}
+
+.custom-swal-title {
+  color: #83bde9; /* Warna judul */
+  font-weight: bold;
+}
+
+.custom-swal-content {
+  color: #83bde9; /* Warna konten teks */
+}
+
+.custom-swal-confirm-button {
+  background-color: #f695ab !important; /* Biru gelap untuk tombol konfirmasi */
+  color: white !important;
+  border-radius: 5px;
+}
+
+.custom-swal-confirm-button:hover {
+  background-color: #e5c6c3 !important; /* Warna lebih gelap ketika dihover */
+}
+
+/* Menargetkan ikon info dan mengubah warnanya menjadi hitam */
+.custom-swal-icon.swal2-info .swal2-icon-content {
+  color: #edce7a !important; /* Mengubah warna ikon menjadi hitam */
+}
+
+.custom-swal-icon.swal2-info {
+  border-color: #edce7a !important; /* Mengubah border ikon menjadi hitam */
+}
